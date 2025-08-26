@@ -1,8 +1,0 @@
-<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:Label text="Experiment" style="top: 10%; width: 269px; align-self: center; font-size: 47px; -unity-font-definition: url(&quot;project://database/Library/unity%20default%20resources?fileID=10102&amp;guid=0000000000000000e000000000000000&amp;type=0#LegacyRuntime&quot;); -unity-font-style: bold;" />
-    <ui:VisualElement style="flex-grow: initial; flex-wrap: nowrap; flex-direction: column; width: 251px; -unity-background-image-tint-color: rgb(255, 249, 122); background-color: rgba(222, 162, 73, 0); justify-content: flex-start; align-self: center; align-content: auto; position: absolute; bottom: 50%; left: auto;">
-        <ui:Button text="Start" style="border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; border-bottom-left-radius: 12px;" />
-        <ui:Button text="Button" style="border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; border-bottom-left-radius: 12px;" />
-        <ui:Button text="Button" style="border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; border-bottom-left-radius: 12px;" />
-    </ui:VisualElement>
-</ui:UXML>

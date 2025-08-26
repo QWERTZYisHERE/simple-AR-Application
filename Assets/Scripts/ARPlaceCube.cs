@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
+
 
 public class ARPlaceObjectUI : MonoBehaviour
 {
@@ -20,6 +22,7 @@ public class ARPlaceObjectUI : MonoBehaviour
     private Button cubeButton;
     private Button sphereButton;
     private Button cylinderButton;
+    private Button goBackButton;
 
     void Start()
     {
@@ -30,9 +33,10 @@ public class ARPlaceObjectUI : MonoBehaviour
 
         // Get UI
         var uiDocument = FindObjectOfType<UIDocument>();
+        var root = uiDocument.rootVisualElement;
         if (uiDocument != null)
         {
-            var root = uiDocument.rootVisualElement;
+
 
             cubeButton = root.Q<Button>("CubeButton");
             sphereButton = root.Q<Button>("SphereButton");
@@ -49,6 +53,14 @@ public class ARPlaceObjectUI : MonoBehaviour
             Debug.Log($"SphereButton found? {sphereButton != null}");
             Debug.Log($"CylinderButton found? {cylinderButton != null}");
         }
+
+        Button goBackButton = root.Q<Button>("BackButton");
+        if (goBackButton != null)
+            goBackButton.clicked += () =>
+            {
+                Debug.Log("Loading GameScene...");
+                SceneManager.LoadScene("StartScreen");
+            };
 
     }
 

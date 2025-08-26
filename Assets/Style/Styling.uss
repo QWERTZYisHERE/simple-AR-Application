@@ -1,0 +1,5 @@
+#PlayButton 
+{
+    text-shadow: 6.1px -2.4px 0px rgba(0, 0, 0, 1);
+    text-shadow-radius: 12px;
+}
